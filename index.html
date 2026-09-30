@@ -104,16 +104,31 @@
       animation: breathe 4s infinite ease-in-out;
     }
 
-    /* Miolo Neon Amarelo */
-    .center-core {
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      background: #ffff00;
-      border-radius: 50%;
-      box-shadow: 0 0 15px #ffff00, 0 0 30px #ffff00, 0 0 50px #ffff00;
-      z-index: 10;
-    }
+  .center-core {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+
+  /* Pólen amarelo no centro da flor */
+  background: radial-gradient(
+    circle,
+    #fff700 0%,
+    #ffd900 45%,
+    #ffae00 75%,
+    #d87800 100%
+  );
+
+  border-radius: 50%;
+
+  /* Brilho natural do pólen */
+  box-shadow:
+    0 0 8px #ffff00,
+    0 0 18px #ffd900,
+    0 0 30px rgba(255, 190, 0, 0.8);
+
+  /* Fica atrás das pétalas */
+  z-index: 1;
+}
 
     /* Pétalas Rosa Neon */
     .petal {
